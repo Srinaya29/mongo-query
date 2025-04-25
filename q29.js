@@ -2,6 +2,8 @@
 //In command prompt type mongosh>mydb> db.dropDatabase("mydb")
 //In command prompt mongorestore -d mydb c:\backup- restoring the backup folder in particular location
 //In mongosh >use mydb> It works with mydb database
+
+//Replication-------------------------------------------------------------------
 //Create a folder replica-example
 
 //Inside replica-example, create 3 folders - data1, data2 and data3
@@ -63,5 +65,19 @@
 
 //then mongosh --port 27020
 //check if this is primary
+ 
+
+//Sharding-------------------------------------------------------------------
+//create Sharding-example Inside create config,rconfig,s1,s1r,s2 and s2r folders
+//mongod --configsvr --port 27018 --replSet rs1 --dbpath g:\sharding-example\conf
+//mongod --configsvr --port 27019 --replSet rs1 --dbpath g:\sharding-example\rconf
+
+
+
+//mongosh -port 27018
+
+//rs.initiate({_id:'rs1',members:[{_id:0,host:'localhost:27018'},{_id:1,host:'localhost:27019'}]})
+
+//
 
 
