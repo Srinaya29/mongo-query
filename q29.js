@@ -32,23 +32,23 @@
 
 //Show dbs
 //use newdb
-db.createCollection("emp")
-db.emp.insertOne({name:"John"})
-exit
+//db.createCollection("emp")
+//db.emp.insertOne({name:"John"})
+//exit
 
 //mongosh --port 27019
-db.getMongo().setReadPref("secondary") 
+//db.getMongo().setReadPref("secondary") 
 //show dbs
 //use newdb
-db.emp.find()
-exit
+//db.emp.find()
+//exit
 
 //mongosh --port 27019
-db.getMongo().setReadPref("secondary") 
+//db.getMongo().setReadPref("secondary") 
 //show dbs
 //use newdb
-db.emp.find()
-exit
+//db.emp.find()
+//exit
 
 
 //Go to primary 27018
