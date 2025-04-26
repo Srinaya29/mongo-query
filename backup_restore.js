@@ -78,6 +78,16 @@
 
 //rs.initiate({_id:'rs1',members:[{_id:0,host:'localhost:27018'},{_id:1,host:'localhost:27019'}]})
 
-//
 
+//mongod --shardsvr --port 27020 --replSet rs2 --dbpath g:\sharding-example\s1
+//mongod --shardsvr --port 27021 --replSet rs2 --dbpath g:\sharding-example\s1r
+
+//mongosh -port 27020
+//rs.initiate({_id:'rs2',members:[{_id:0,host:'localhost:27020'},{_id:1,host:'localhost:27021'}]})
+
+//mongod --shardsvr --port 27022 --replSet rs3 --dbpath g:\sharding-example\s2
+//mongod --shardsvr --port 27023 --replSet rs3 --dbpath g:\sharding-example\s2r
+
+//mongosh -port 27022
+//rs.initiate({_id:'rs3',members:[{_id:0,host:'localhost:27022'},{_id:1,host:'localhost:27023'}]})
 

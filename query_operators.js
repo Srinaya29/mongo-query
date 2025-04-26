@@ -200,3 +200,9 @@ db.employees.updateMany(
   { },
   { $pull: { points: { $gte: 7 } } }
 );    
+
+db.emplyees.find({nationality:"ABC"})
+  
+db.emplyees.findOne({nationality:"ABC"})
+
+db.employees.deleteMany({nationality:"ABC"}) ;
