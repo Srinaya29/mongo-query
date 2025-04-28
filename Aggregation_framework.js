@@ -135,5 +135,4 @@ db.employees.aggregate([
         },
       ]);
 
-      //this query displays the
       
